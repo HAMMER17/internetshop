@@ -1,0 +1,43 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input {
+  width: 350px;
+  height: 25px;
+  margin: 10px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.inputBtn {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background: green;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+.registerH1 {
+  position: absolute;
+  top: 80px;
+  left: 450px;
+  color: green;
+}

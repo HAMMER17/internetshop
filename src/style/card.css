@@ -1,0 +1,37 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto 1fr;
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  /* background: gray; */
+}
+
+.cardBtn {
+  width: 150px;
+  height: 30px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete {
+  background: red;
+}
+
+.cardBtn:hover {
+  transform: scale(1.1);
+  background: rgb(54, 229, 54);
+}
