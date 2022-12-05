@@ -70,7 +70,7 @@ const Basket = () => {
     onAuthStateChanged(auth, async (user) => {
       if (user) {
         await deleteDoc(doc(db, "Cart " + user.uid, product.id));
-        console.log('delete')
+
       }
     })
   }
@@ -81,7 +81,7 @@ const Basket = () => {
   const current = cur.reduce(count, 0)
   const total = getProd.map(item => item.total)
   const sum = total.reduce((acc, num) => acc + num, 0)
-  console.log(getProd.length)
+
   return (
     <>
       <Navbar user={user} current={current} sum={sum} />
@@ -89,6 +89,7 @@ const Basket = () => {
         <BasketProduct products={getProd} delCard={delCard}
           plusCard={plusCard} minusCard={minusCard} />
       </div>
+
     </>
   )
 }

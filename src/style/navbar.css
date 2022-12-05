@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: aqua;
+  background: black;
+  color: white;
 }
 
 .link {
@@ -26,6 +27,7 @@
   margin: 10px;
   color: white;
   cursor: pointer;
+  font-family: 'Great Vibes', cursive;
 }
 
 .navBtn:hover {
@@ -42,6 +44,7 @@
 
 .navH3 {
   text-transform: uppercase;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .navCurrent {

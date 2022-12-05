@@ -18,6 +18,7 @@ function App() {
           <Route path='register' element={<Register />} />
           <Route path='addproduct' element={<AddProduct />} />
           <Route path='basket' element={<Basket />} />
+
         </Route>
       </Routes>
     </>

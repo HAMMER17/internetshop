@@ -1,5 +1,57 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200&family=Philosopher&family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ a {
+   /* text-decoration: none; */
+   font-family: 'Oswald', sans-serif;
+   color: red;
+   font-weight: bold;
+ }
+
+ .getProduct {
+   position: absolute;
+   top: 100px;
+   left: 400px;
+   border-radius: 10px;
+   width: 500px;
+   height: 500px;
+   border: 3px solid black;
+   background: white;
+   z-index: 1;
+ }
+
+ .dataProduct {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   padding: 10px;
+ }
+
+ .dataBtn {
+   width: 150px;
+   height: 30px;
+   border: none;
+   background: red;
+   margin-top: 50px;
+ }
+
+ .dataH2 {
+   color: blue;
+   margin: 20px;
+ }
+
+ .delProduct {
+   display: none;
+ }
+
+ /* font-family: 'Great Vibes', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Playfair Display', serif; */

@@ -55,6 +55,7 @@ const Home = () => {
         })
     })
   }
+
   const [getProd, setGetProd] = useState([])
   useEffect(() => {
     onAuthStateChanged(auth, async (user) => {
@@ -69,14 +70,31 @@ const Home = () => {
   }, [])
   const current = getProd.map(elem => elem.price)
   const sum = current.reduce((acc, num) => acc + num, 0)
-  // console.log(sum)
+  const [data, setData] = useState('')
+  const [el, setEl] = useState(false)
+  const getProduct = (product) => {
+    setEl('getProduct')
+    setData(product)
+    console.log(product)
+  }
+  const click = () => {
+    setEl('delProduct')
+  }
   return (
     <div>
       <Navbar user={user} current={getProd.length} sum={sum} />
-      <h3 style={{ textAlign: 'center', color: 'green' }}>{sms}</h3>
+      <h3 style={{ textAlign: 'center', color: 'white', width: '100%', background: 'green' }}>{sms}</h3>
+      <div className={el}>
+        <div className="dataProduct">
+          <h2 className='dataH2'>{data.title}</h2>
+          <img style={{ width: 250 }} src={data.url} alt="1" />
+          <h3>{data.price}<span> p</span></h3>
+          <p style={{ margin: 10 }}>{data.discription}</p>
+          <button className='dataBtn' onClick={click}>delete</button>
+        </div>
+      </div>
       <div className="card">
-
-        <Products products={prod} individualProduct={addToCard} />
+        <Products products={prod} individualProduct={addToCard} getProducts={getProduct} />
       </div>
 
     </div>
