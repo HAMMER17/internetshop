@@ -5,6 +5,24 @@
 
 }
 
+@media (max-width: 1200px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
 .cardGrid {
   display: grid;
   grid-template-rows: auto;

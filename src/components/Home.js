@@ -71,7 +71,7 @@ const Home = () => {
   const current = getProd.map(elem => elem.price)
   const sum = current.reduce((acc, num) => acc + num, 0)
   const [data, setData] = useState('')
-  const [el, setEl] = useState(false)
+  const [el, setEl] = useState('delProduct')
   const getProduct = (product) => {
     setEl('getProduct')
     setData(product)
